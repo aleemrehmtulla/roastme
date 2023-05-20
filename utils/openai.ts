@@ -32,6 +32,7 @@ export async function OpenAIStream(message: string) {
         },
         { role: "user", content: message },
       ],
+      max_tokens: 200,
       stream: true,
     }),
   });

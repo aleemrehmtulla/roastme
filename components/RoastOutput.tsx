@@ -15,7 +15,7 @@ Because let me tell you, it’s not working.
 And as for those mysterious silhouettes in the background, I can only assume they’re trying to escape your cringeworthy presence. 
 Keep posing though, maybe one day you’ll become a real cartoon character and we can all live in your colorful, delusional world.
 `;
-const DefaultImage = "https://a264-66-46-12-74.ngrok-free.app/aleem.png";
+const DefaultImage = "https://roastme.aleem.tv/aleem.png";
 const DefaultDescription = "Aleem Rehmtulla about to be roasted";
 
 const RoastOutput = ({ image, roast, loading }: RoastOutputProps) => {

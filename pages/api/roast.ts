@@ -32,7 +32,7 @@ const handler = async (req: Request): Promise<Response> => {
   // we're waiting with a timeout because the model takes a while to generate
   // you can also setup a db + websocket to get notified when the model is done
   // but while although better, it's a bit much for a smol project
-  await new Promise((resolve) => setTimeout(resolve, 14000));
+  await new Promise((resolve) => setTimeout(resolve, 20000));
 
   console.log("Getting diffusion");
 
@@ -45,6 +45,7 @@ const handler = async (req: Request): Promise<Response> => {
   });
 
   const explanationFinished = await getExplanation.json();
+  console.log("Got explanation: ", explanationFinished);
   const output = explanationFinished.output.join(" ");
 
   console.log("Got diffusion: ", output.length);

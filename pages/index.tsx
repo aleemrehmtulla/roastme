@@ -29,7 +29,7 @@ export default function Home() {
           Roast Me 🔥
         </Heading>
         <Text fontSize={{ base: "sm", md: "lg" }}>
-          note: current estimated load time is 14s
+          note: minimum load time is 20s due to inactivity 
         </Text>
 
         <FileUploader

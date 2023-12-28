@@ -38,7 +38,7 @@ const FileUploader = ({
       });
 
       if (!hit.ok) {
-        return toast({ title: "Upload failed", status: "error" });
+        return toast({ title: "Request timed out", status: "error" });
       }
 
       const streamData = hit.body;
